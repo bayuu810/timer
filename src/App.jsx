@@ -23,12 +23,13 @@ function App() {
     setTimeList([...timeList, time]);
   };
 
+
   const handleDeleteTime = (index) => {
     setTimeList(timeList.filter((_, i) => i !== index));
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-white">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-400">
       <div className="flex flex-col items-center justify-center h-[200px] w-[400px] border rounded-xl py-2 px-4 border-yellow-600  bg-black text-white mb-4">
       <h1 className="text-4xl font-semibold mb-4">Balap Liar</h1>
         <div className="text-xl font-semibold mb-4">
